@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi página</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="encabezado">
+        <div class="logo">MANUALIDADES ELIZABETH</div>
+        <ul class="listaDeLinks">
+            <li><a href="#inicio">INICIO</a></li>
+            <li><a href="#servicios">SERVICIOS</a></li>
+            <li><a href="#contacto">CONTACTO</a></li>
+            <li><a href="#acerca">ACERCA DE NOSOTROS</a></li>
+        </ul>
+    </nav>
+
+    <header id="inicio" class="inicio-seccion">
+        <h1>Bienvenido A Mi Página Web</h1><br>
+        <p>Descubre nuestros servicios y más</p>
+        <a href="#servicios" class="inicio-primario">Descubre más</a>
+    </header>
+
+    <main>
+        <section id="servicios" class="carta-seccion">
+            <h2>Nuestros servicios</h2>
+            <div class="carta">
+                <div class="carta-item">
+                    <h3>Llaveros Personalizados</h3>
+                    <p>Llaveros de personajes u objetos personalizados</p>
+                    <img height="150" width="120" src="WhatsApp Image 2025-01-16 at 6.19.29 PM.jpeg" alt="Imagen de llavero">
+                </div>
+                <div class="carta-item">
+                    <h3>Adornos De Cocina</h3>
+                    <p>Toallas para manos, fundas para microondas y licuadora, guantes de tela</p>
+                    <img height="150" width="120" src="WhatsApp Image 2025-01-16 at 6.19.28 PM.jpeg" alt="Imagen de un adorno de cocina">
+                </div>
+                <div class="carta-item">
+                    <h3>Esculturas de Cartón</h3>
+                    <p>Esculturas personalizadas con cartón periódico y otros materiales</p>
+                    <img height="150" width="120" src="WhatsApp Image 2025-01-16 at 6.19.29 PM (1).jpeg" alt="Imagen de una escultura de casa de árbol">
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto-seccion">
+            <h2 id="titulo-contacto">Contáctanos</h2>
+            <form id="contacto-form" action="/send_email" method="post">
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br>
+                <input type="email" id="correo" name="correo" placeholder="Correo" required><br>
+                <input type="number" id="telefono" name="telefono" placeholder="Número de Teléfono" required><br>
+                <textarea name="pedido" id="pedido" placeholder="Describe tu pedido" required></textarea><br>
+                <button type="reset">Rehacer la información</button><br>
+                <button type="submit">Enviar información</button>
+            </form>
+        </section>
+
+        <div id="mensajes-flash" class="mensajes-flash"></div>
+
+        <section id="acerca" class="acerca-seccion">
+            <h2>Acerca de nosotros</h2>
+            <p>Nos dedicamos a hacer todo tipo de manualidades con fieltro, cartón, periódico, entre otras cosas.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy;2025 Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>

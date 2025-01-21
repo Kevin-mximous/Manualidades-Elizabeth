@@ -1,0 +1,180 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e3f2fd; /* Color de fondo azul claro */
+    color: #333; /* Color del texto */
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Asegura que el cuerpo ocupe al menos toda la altura de la ventana */
+}
+
+/* Encabezado y navegación */
+.encabezado {
+    background-color: #64b5f6; /* Color de fondo azul pastel para el encabezado */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0d47a1; /* Color del logo en azul oscuro */
+}
+
+.listaDeLinks {
+    list-style-type: none; /* Eliminar viñetas de la lista */
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.listaDeLinks li {
+    margin-left: 30px; /* Espaciado entre los enlaces */
+}
+
+.listaDeLinks a {
+    text-decoration: none; /* Sin subrayado */
+    color: #0d47a1; /* Color de los enlaces en azul oscuro */
+    transition: color 0.3s, transform 0.3s; /* Transición suave para el color y transformación */
+}
+
+.listaDeLinks a:hover {
+    color: #1976d2; /* Color al pasar el mouse sobre el enlace */
+    transform: scale(1.1); /* Efecto de aumento al pasar el mouse */
+}
+
+/* Sección de inicio */
+.inicio-seccion {
+    text-align: center;
+    padding: 60px 20px;
+    background-image: linear-gradient(to bottom right, #bbdefb, #64b5f6); /* Degradado de fondo */
+}
+
+.inicio-seccion h1 {
+    font-size: 40px;
+}
+
+.inicio-primario {
+    background-color: #1976d2; /* Botón con color azul vibrante */
+    color: white; /* Color del texto del botón */
+    padding: 12px 25px;
+    border-radius: 5px;
+    border: none; /* Sin borde en el botón */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+}
+
+.inicio-primario:hover {
+    background-color: #1565c0; /* Color al pasar el mouse sobre el botón */
+}
+
+/* Sección de servicios */
+.carta-seccion {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.carta {
+    display: flex;
+    justify-content: space-around; /* Espacio entre las cartas */
+}
+
+.carta > div {
+    background-color: #fff; /* Fondo blanco para las cartas */
+    border-radius: 10px; /* Bordes redondeados en las cartas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Sombra más pronunciada en las cartas */
+    padding: 20px;
+    margin-top: 20px; /* Espacio superior entre las cartas */
+    width: calc(30% - 40px); /* Ancho de cada carta con margen considerado */
+}
+
+.carta img {
+    max-width: 100%; /* Asegura que las imágenes no excedan el ancho de la carta */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+/* Sección de contacto */
+.contacto-seccion {
+    background-color: #bbdefb; /* Color de fondo suave para la sección de contacto */
+    padding: 40px 20px;
+}
+
+#contacto-form input,
+#contacto-form textarea {
+    width: calc(100% - 20px); /* Ancho del input y textarea con espaciado interno considerado */
+    padding: 12px;
+    margin-bottom: 15px; /* Espaciado inferior entre campos */
+    border-radius: 5px; /* Bordes redondeados en campos de formulario */
+    border: 1px solid #90caf9; /* Borde azul claro en campos de formulario */
+}
+
+#contacto-form button {
+    background-color: #1976d2; /* Botón con color azul vibrante */
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    border: none; /* Sin borde en el botón */
+}
+
+#contacto-form button:hover {
+    background-color: #1565c0; /* Color al pasar el mouse sobre el botón */
+}
+
+/* Sección "Acerca de" y footer */
+.acerca-seccion,
+footer {
+   text-align:center ;
+   padding :20px ;
+   background-color:#64b5f6 ; 
+   color:white ; 
+   margin-top:auto ; 
+}
+
+footer p {
+   margin :0 ; 
+}
+
+/* Estilos responsivos */
+
+/* Para pantallas pequeñas (teléfonos) */
+@media (max-width: 768px) {
+    
+   .listaDeLinks {
+       flex-direction : column ; 
+       align-items : center ; 
+       margin-top :10px ; 
+   }
+
+   .listaDeLinks li {
+       margin-left :0 ; 
+       margin-bottom :10px ; 
+   }
+
+   .carta {
+       flex-direction : column ; 
+       align-items : center ; 
+   }
+
+   .carta > div {
+       width :80% ; 
+       margin-bottom :20px ; 
+   }
+
+   .inicio-seccion h1 {
+       font-size :30px ; 
+   }
+
+   .inicio-primario {
+       width :90% ; 
+       padding :10px ; 
+   }
+   
+   #contacto-form input,
+   #contacto-form textarea,
+   #contacto-form button{
+       width :90% ; 
+   }
+}
