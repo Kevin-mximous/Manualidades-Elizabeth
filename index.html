@@ -3,7 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi página</title>
+    <title>MANUALIDADES ELIZABETH</title>
+    <meta property="og:title" content="MANUALIDADES ELIZABETH" />
+    <meta property="og:description" content="manualidades de todo tipo." />
+    <meta property="og:image" content="https://kevin-mximous.github.io/manualidades_Elizabeth/" />
+    <link rel="icon" type="image/x-icon" href="logo_elizabeth.jpeg">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -30,28 +34,32 @@
                 <div class="carta-item">
                     <h3>Llaveros Personalizados</h3>
                     <p>Llaveros de personajes u objetos personalizados</p>
-                    <img height="150" width="120" src="WhatsApp Image 2025-01-16 at 6.19.29 PM.jpeg" alt="Imagen de llavero">
+                    <img height="150vh" width="120vh" src="WhatsApp Image 2025-01-16 at 6.19.29 PM.jpeg" alt="Imagen de llavero">
                 </div>
                 <div class="carta-item">
                     <h3>Adornos De Cocina</h3>
                     <p>Toallas para manos, fundas para microondas y licuadora, guantes de tela</p>
-                    <img height="150" width="120" src="WhatsApp Image 2025-01-16 at 6.19.28 PM.jpeg" alt="Imagen de un adorno de cocina">
+                    <img height="150vh" width="120vh" src="WhatsApp Image 2025-01-16 at 6.19.28 PM.jpeg" alt="Imagen de un adorno de cocina">
                 </div>
                 <div class="carta-item">
                     <h3>Esculturas de Cartón</h3>
                     <p>Esculturas personalizadas con cartón periódico y otros materiales</p>
-                    <img height="150" width="120" src="WhatsApp Image 2025-01-16 at 6.19.29 PM (1).jpeg" alt="Imagen de una escultura de casa de árbol">
+                    <img height="150vh" width="120vh" src="WhatsApp Image 2025-01-16 at 6.19.29 PM (1).jpeg" alt="Imagen de una escultura de casa de árbol">
                 </div>
             </div>
         </section>
 
         <section id="contacto" class="contacto-seccion">
             <h2 id="titulo-contacto">Contáctanos</h2>
-            <form id="contacto-form" action="/send_email" method="post">
+            <form id="contacto-form" action="https://formsubmit.co/elizabeth.espinoza.delrio@gmail.com" method="POST">
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre" required><br>
                 <input type="email" id="correo" name="correo" placeholder="Correo" required><br>
                 <input type="number" id="telefono" name="telefono" placeholder="Número de Teléfono" required><br>
-                <textarea name="pedido" id="pedido" placeholder="Describe tu pedido" required></textarea><br>
+                <textarea id="pedido" name="pedido" placeholder="Describe tu pedido" required></textarea><br>
+                <!-- es sobre formsubmit -->
+                <input type="hidden" name="_blacklist" value="pendeja, pendejo, joto, puta, puto">
+                <input type="hidden" name="_template" value="table">
+                <!-- aqui termina -->
                 <button type="reset">Rehacer la información</button><br>
                 <button type="submit">Enviar información</button>
             </form>
@@ -69,6 +77,6 @@
         <p>&copy;2025 Todos los derechos reservados.</p>
     </footer>
 
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
 </body>
 </html>
